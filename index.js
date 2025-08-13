@@ -8,10 +8,10 @@ const mountPath = '/parse'; // API yolu
 
 // Parse Server konfigürasyonu
 const api = new ParseServer({
-  databaseURI: 'mongodb://127.0.0.1:27017/dev', // MongoDB bağlantı URI'si
+  databaseURI:process.env.DATABASE_URI, // MongoDB bağlantı URI'si
   cloud: path.join(__dirname, '/cloud/main.js'), // Cloud Code dosya yolu (gerekirse)
-  appId: 'musa.321',
-  masterKey: 'musamusa.321', // SAKIN gerçek projede açık yazma!
+  appId:process.env.APP_ID,
+  masterKey: process.env.MASTER_KEY,
   serverURL: `http://localhost:${port}${mountPath}`,
   publicServerURL: `http://localhost:${port}${mountPath}`,
   allowClientClassCreation: true,
