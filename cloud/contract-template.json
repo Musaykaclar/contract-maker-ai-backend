@@ -1,0 +1,56 @@
+[
+  {
+    "name": "rental_agreement",
+    "label": {
+      "en": "Rental Agreement",
+      "tr": "Kira Sözleşmesi",
+      "de": "Mietvertrag",
+      "fr": "Contrat de location"
+    },
+    "fields": [
+      {
+        "name": "landlord",
+        "label": {
+          "en": "Landlord Name",
+          "tr": "Kiraya Veren Adı",
+          "de": "Vermieter Name",
+          "fr": "Nom du propriétaire"
+        },
+        "type": "text"
+      },
+      {
+        "name": "tenant",
+        "label": {
+          "en": "Tenant Name",
+          "tr": "Kiracı Adı",
+          "de": "Mieter Name",
+          "fr": "Nom du locataire"
+        },
+        "type": "text"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "name": "employment_contract",
+    "label": {
+      "en": "Employment Contract",
+      "tr": "İş Sözleşmesi",
+      "de": "Arbeitsvertrag",
+      "fr": "Contrat de travail"
+    },
+    "fields": [
+      {
+        "name": "employer",
+        "label": {
+          "en": "Employer Name",
+          "tr": "İşveren Adı",
+          "de": "Arbeitgeber Name",
+          "fr": "Nom de l'employeur"
+        },
+        "type": "text"
+      }
+    ],
+    "isActive": true
+  }
+]
